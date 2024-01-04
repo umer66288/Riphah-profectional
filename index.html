@@ -1,0 +1,292 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Riphah Portal</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
+    <link rel="icon" href="./images/RipLogo.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Navbar -->
+    <header id="Header" class="px-2 px-md-4 py-2 border-bottom" data-aos="fade-down">
+        <div class="d-flex justify-content-between align-items-center">
+            <div>
+                <img src="images/RipLogo.png" class="w-100" alt="logo">
+            </div>
+            <div class="text-center d-none d-md-inline">
+                <div class="primary-font fw-bold fs-4 text-primary-emphasis text-shadow">RIPHAH INTERNATIONAL UNIVERSITY FAISALABAD
+                    CAMPUS</div>
+                <small class="text-warning-emphasis fw-semibold text-shadow">Establishment of Educational Institutions with a focus
+                    on inculcating Islamic
+                    ethical values</small>
+                <div class="text-info fw-semibold my-1 text-shadow">WEB EDUCATIONAL PORTAL</div>
+            </div>
+            <div class="text-center">
+                <div class="text-success sm-txt text-shadow"> Main Satyana Road Faisalabad Near Fish Farm</div>
+                <div class="text-success sm-txt text-shadow">Phone: +92 41 8777 210, +92 41 8777 310</div>
+            </div>
+        </div>
+    </header>
+    <!-- Main Section -->
+    <section class="p-0 p-md-4">
+        <div class="row g-0">
+            <div class="col-md-8 d-none d-md-inline bg-light shadow-sm" data-aos="fade-in">
+                <div class="primary-font text-danger fw-bold fs-3 m-4 text-shadow">Riphah International University Faisalabad
+                    Campus</div>
+                <div class="d-flex justify-content-between px-4">
+                    <!-- Clock Box -->
+                    <div class="for-clock d-flex justify-content-center align-items-center">
+                        <div class="px-5">
+                            <canvas id="clock" width="250" height="250"></canvas>
+                        </div>
+                    </div>
+                    <!-- Image Box -->
+                    <div class="d-none d-lg-inline ">
+                        <img src="images/RiphahLogoMain.png" alt="" style="height: 340px;">
+                    </div>
+                </div>
+                <div class="d-flex justify-content-between">
+                    <div class="p-3">
+                        <div class="mb-2 d-none d-lg-block">
+                            <a href="https://riphahfsd.edu.pk/" target="_blank"
+                                class="btn btn-info text-white mb-1">visit university</a>
+                            <a href="https://riphahfsd.edu.pk/" target="_blank" class="btn btn-warning text-white">visit
+                                compus</a>
+                        </div>
+                        <div class="text-muted">
+                            <div class="fw-semibold">About Riphah International University</div>
+                            <p>Welcome to Riphah International University Faisalabad Campus, To cater the needs of
+                                millions of students of Faisalabad and surrounding areas, Riphah launched a new
+                                educational institute namely Riphah Faisalabad which is an integral part of Riphah
+                                international University Islamabad.</p>
+                        </div>
+                    </div>
+                    <div class="p-3 d-flex align-items-end">
+                        <div class="text-muted">
+                            <div class="fw-semibold">HEC Approved Campus</div>
+                            <p>Riphah International University, Faisalabad In General medium sized universities Ranked
+                                No.1 private and No.6 overall in the category by the Higher Education Commission (HEC)
+                                of Pakistan and soon was included in the top five universities in the private sector who
+                                qualify to receive research grants from the Government of Pakistan through the HEC.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Login form Box -->
+            <div class="col-md-4 col-12" data-aos="fade-in">
+                <div class="border shadow-sm m-2">
+                    <!-- Nav tabs -->
+                    <ul class="nav nav-underline mb-4 px-0 px-md-1" id="myTab" data-aos="flip-up">
+                        <li class="nav-item">
+                            <button class="nav-link text-secondary active" data-bs-toggle="pill"
+                                data-bs-target="#Graduatelogin"><i
+                                    class="bi bi-mortarboard-fill mx-1"></i>Alumni</button>
+                        </li>
+                        <li class="nav-item">
+                            <button class="nav-link text-secondary" data-bs-toggle="pill"
+                                data-bs-target="#Registrationlogin"><i
+                                    class="bi bi-cursor-fill mx-1"></i>Registration</button>
+                        </li>
+                        <li class="nav-item">
+                            <button class="nav-link text-secondary " data-bs-toggle="pill"
+                                data-bs-target="#studentlogin"><i class="bi bi-person-fill mx-1"></i>login</button>
+                        </li>
+                    </ul>
+                    <!-- Tab panes -->
+                    <div class="tab-content" id="myTabContent">
+                        <div class="tab-pane fade show active p-3" id="Graduatelogin">
+                            <form>
+                                <div class="mb-3">
+                                    <label for="CNIC1" class="form-label">CNIC</label>
+                                    <div class="input-group">
+                                        <input type="number" class="form-control" id="CNIC1">
+                                        <span class="input-group-text" id="addon-wrapping"><i
+                                                class="bi bi-person-fill mx-1"></i></span>
+                                    </div>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="RollNumber1" class="form-label">Roll Number</label>
+                                    <div class="input-group">
+                                        <input type="number" class="form-control" id="RollNumber1">
+                                        <span class="input-group-text" id="addon-wrapping"><i
+                                                class="bi bi-person-fill mx-1"></i></span>
+                                    </div>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="Password1" class="form-label">Password</label>
+                                    <div class="input-group mb-2">
+                                        <input type="password" class="form-control" id="Password1">
+                                        <span class="input-group-text" id="addon-wrapping"><i
+                                                class="bi bi-person-fill-lock"></i></span>
+                                    </div>
+                                    <a href="#" class="text-decoration-none">Forgot password?</a>
+                                </div>
+                                <div class="mb-3 form-check">
+                                    <input type="checkbox" class="form-check-input rounded-0" id="checkbox1">
+                                    <label class="form-check-label" for="checkbox1">Stay signed in</label>
+                                </div>
+                                <div class="d-flex justify-content-end bg-light border-top">
+                                    <a href="Graduate-login.html" class="m-4 style-btn text-decoration-none">
+                                        <div class="svg-wrapper-1">
+                                            <div class="svg-wrapper">
+                                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="18"
+                                                    height="18">
+                                                    <path fill="none" d="M0 0h24v24H0z"></path>
+                                                    <path fill="currentColor"
+                                                        d="M1.946 9.315c-.522-.174-.527-.455.01-.634l19.087-6.362c.529-.176.832.12.684.638l-5.454 19.086c-.15.529-.455.547-.679.045L12 14l6-8-8 6-8.054-2.685z">
+                                                    </path>
+                                                </svg>
+                                            </div>
+                                        </div>
+                                        <span>Login</span>
+                                    </a>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="tab-pane fade p-3" id="Registrationlogin">
+                            <form>
+                                <div class="mb-3">
+                                    <label for="CNIC2" class="form-label">CNIC</label>
+                                    <div class="input-group">
+                                        <input type="number" class="form-control" id="CNIC2">
+                                        <span class="input-group-text" id="addon-wrapping"><i
+                                                class="bi bi-person-fill mx-1"></i></span>
+                                    </div>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="RollNumber2" class="form-label">Roll Number</label>
+                                    <div class="input-group">
+                                        <input type="number" class="form-control" id="RollNumber2">
+                                        <span class="input-group-text" id="addon-wrapping"><i
+                                                class="bi bi-person-fill mx-1"></i></span>
+                                    </div>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="Password2" class="form-label">Password</label>
+                                    <div class="input-group mb-2">
+                                        <input type="password" class="form-control" id="Password2">
+                                        <span class="input-group-text" id="addon-wrapping"><i
+                                                class="bi bi-person-fill-lock"></i></span>
+                                    </div>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="ConfirmPassword" class="form-label">Confirm Password</label>
+                                    <div class="input-group">
+                                        <input type="password" class="form-control" id="ConfirmPassword">
+                                        <span class="input-group-text" id="addon-wrapping"><i
+                                                class="bi bi-person-fill-lock"></i></span>
+                                    </div>
+                                </div>
+                                <div class="d-flex justify-content-end bg-light border-top">
+                                    <button class="m-4 style-btn" type="submit">
+                                        <div class="svg-wrapper-1">
+                                            <div class="svg-wrapper">
+                                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="18"
+                                                    height="18">
+                                                    <path fill="none" d="M0 0h24v24H0z"></path>
+                                                    <path fill="currentColor"
+                                                        d="M1.946 9.315c-.522-.174-.527-.455.01-.634l19.087-6.362c.529-.176.832.12.684.638l-5.454 19.086c-.15.529-.455.547-.679.045L12 14l6-8-8 6-8.054-2.685z">
+                                                    </path>
+                                                </svg>
+                                            </div>
+                                        </div>
+                                        <span>Register</span>
+                                    </button>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="tab-pane fade p-3" id="studentlogin">
+                            <form>
+                                <div class="mb-3">
+                                    <label for="CNIC3" class="form-label">CNIC</label>
+                                    <div class="input-group">
+                                        <input type="number" class="form-control" id="CNIC3">
+                                        <span class="input-group-text" id="addon-wrapping"><i
+                                                class="bi bi-person-fill mx-1"></i></span>
+                                    </div>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="RollNumber3" class="form-label">Roll Number</label>
+                                    <div class="input-group">
+                                        <input type="number" class="form-control" id="RollNumber3">
+                                        <span class="input-group-text" id="addon-wrapping"><i
+                                                class="bi bi-person-fill mx-1"></i></span>
+                                    </div>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="Password3" class="form-label">Password</label>
+                                    <div class="input-group mb-2">
+                                        <input type="password" class="form-control" id="Password3">
+                                        <span class="input-group-text" id="addon-wrapping"><i
+                                                class="bi bi-person-fill-lock"></i></span>
+                                    </div>
+                                    <a href="#" class="text-decoration-none">Forgot password?</a>
+                                </div>
+                                <div class="mb-3 form-check">
+                                    <input type="checkbox" class="form-check-input rounded-0" id="checkbox2">
+                                    <label class="form-check-label" for="checkbox2">Stay signed in</label>
+                                </div>
+                                <div class="d-flex justify-content-end bg-light border-top">
+                                    <a href="Student-profile.html" class="m-4 style-btn text-decoration-none">
+                                        <div class="svg-wrapper-1">
+                                            <div class="svg-wrapper">
+                                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="18"
+                                                    height="18">
+                                                    <path fill="none" d="M0 0h24v24H0z"></path>
+                                                    <path fill="currentColor"
+                                                        d="M1.946 9.315c-.522-.174-.527-.455.01-.634l19.087-6.362c.529-.176.832.12.684.638l-5.454 19.086c-.15.529-.455.547-.679.045L12 14l6-8-8 6-8.054-2.685z">
+                                                    </path>
+                                                </svg>
+                                            </div>
+                                        </div>
+                                        <span>Login</span>
+                                    </a>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <div class="text-center py-2 d-block d-lg-none">
+                    <a href="https://riphahfsd.edu.pk/" target="_blank" class="btn btn-info text-white">visit
+                        university</a>
+                    <a href="https://riphahfsd.edu.pk/" target="_blank" class="btn btn-warning text-white">visit
+                        compus</a>
+                </div>
+                <div class="text-center text-muted fs-5 pt-2">GET IN TOUCH</div>
+                <!-- Social Links -->
+                <div class="d-flex justify-content-center mt-2 mb-4">
+                    <a href="https://www.facebook.com/Riphahfaisalabad/" target="_blank"
+                        class="mx-1 rounded rounded-2 text-white bg-info px-2 py-1"><i class="bi bi-facebook"></i></a>
+                    <a href="https://www.instagram.com/riphahuniversityfsd?igsh=YXViZGVhc3YxNTl1" target="_blank"
+                        class="mx-1 rounded rounded-2 text-white bg-danger px-2 py-1"><i
+                            class="bi bi-instagram"></i></a>
+                    <a href="https://pk.linkedin.com/company/riphah-international-university-faisalabad-campus"
+                        target="_blank" class="mx-1 rounded rounded-2 text-white bg-warning px-2 py-1"><i
+                            class="bi bi-linkedin"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Footer -->
+    <footer class="bg-body-secondary text-center py-3 py-md-4 fw-semibold text-info-emphasis text-shadow" id="copyright"></footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 1000,
+            once: true,
+        });
+    </script>
+</body>
+
+</html>

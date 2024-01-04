@@ -1,0 +1,641 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Riphah Portal</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="icon" href="./images/RipLogo.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Navbar -->
+    <header id="Header" class="px-2 px-md-4 py-2 border-bottom" data-aos="fade-down">
+        <div class="d-flex justify-content-between align-items-center">
+            <div>
+                <img src="images/RipLogo.png" class="w-100" alt="logo">
+            </div>
+            <div class="text-center d-none d-md-inline">
+                <div class="primary-font fw-bold fs-4 text-primary-emphasis text-shadow">RIPHAH INTERNATIONAL UNIVERSITY
+                    FAISALABAD
+                    CAMPUS</div>
+                <small class="text-warning-emphasis fw-semibold text-shadow">Establishment of Educational Institutions
+                    with a focus
+                    on inculcating Islamic
+                    ethical values</small>
+                <div class="text-info fw-semibold my-1 text-shadow">WEB EDUCATIONAL PORTAL</div>
+            </div>
+            <div class="text-center">
+                <div class="d-flex justify-content-center align-items-center mb-2">
+                    <div class="">
+                        <a href="index.html"
+                            class="btn btn-danger text-white px-2 py-1 rounded-0 mx-1 fw-semibold text-shadow"><i
+                                class="bi bi-box-arrow-in-left"></i></a>
+                    </div>
+                    <div>
+                        <input type="search" class="form-control px-2 py-1 rounded-0 border-danger text-shadow"
+                            placeholder="Search">
+                    </div>
+                    <div class="d-none d-lg-inline">
+                        <button class="btn btn-danger text-white px-2 py-1 rounded-0 mx-1 text-shadow"
+                            onclick="refreshBrowser()">
+                            <i class="bi bi-arrow-repeat"></i></button>
+                    </div>
+                    <div class="d-inline d-lg-none">
+                        <button class="btn btn-danger text-white px-2 py-1 rounded-0 mx-1 text-shadow"
+                            data-bs-toggle="offcanvas" data-bs-target="#offcanvas1"><i class="bi bi-list"></i></button>
+                    </div>
+                </div>
+                <div class="text-success sm-txt text-shadow"> Main Satyana Road Faisalabad Near Fish Farm</div>
+                <div class="text-success sm-txt text-shadow">Phone: +92 41 8777 210, +92 41 8777 310</div>
+            </div>
+        </div>
+    </header>
+    <!-- breadcrumb -->
+    <nav aria-label="breadcrumb" class="d-none d-md-inline">
+        <ol
+            class="breadcrumb text-info mb-0 align-items-center border d-flex justify-content-center rounded-0 border-bottom">
+            <li class="breadcrumb-item">
+                <div class="btn btn-secondary px-2 py-1 rounded-1" onclick="refreshBrowser()">
+                    <i class="bi bi-arrow-repeat"></i>
+                </div>
+            </li>
+            <li class="breadcrumb-item">Riphah College Of Computing </li>
+            <li class="breadcrumb-item">Department of Computing </li>
+            <li class="breadcrumb-item">You are Logged in As: Student </li>
+            <li class="breadcrumb-item">Welcome! MUHAMMAD WAIZ (19278) </li>
+            <li class="breadcrumb-item"><a href="index.html" class="text-danger">Signout</a></li>
+        </ol>
+    </nav>
+    <section>
+        <div class="row m-0">
+            <div class="col-2 d-lg-inline d-none p-0">
+                <div class="list-group rounded-0">
+                    <div class="text-white style-color p-3">Welcome To Riphah FSD
+                    </div>
+                    <a href="Student-profile.html" class="list-group-item p-2 text-info"><i
+                            class="bi bi-person-check-fill mx-2"></i>My
+                        Profile</a>
+                    <a href="#" class="list-group-item p-2 text-danger"><i class="bi bi-rocket-takeoff-fill mx-2"></i>My
+                        Results</a>
+                    <a href="#" class="list-group-item p-2 text-info-emphasis"><i class="bi bi-flower2 mx-2"></i>New
+                        Enrollment</a>
+                    <a href="#" class="list-group-item p-2 text-info-emphasis"><i class="bi bi-flower1 mx-2"></i>All
+                        Enrollments</a>
+                    <a href="#" class="list-group-item p-2 text-info"><i class="bi bi-clock-fill mx-2"></i>My
+                        Timetable</a>
+                    <a href="Attendance.html" class="list-group-item p-2 text-info"><i
+                            class="bi bi-tencent-qq mx-2"></i>Attendance</a>
+                    <a href="#" class="list-group-item p-2 text-info-emphasis"><i
+                            class="bi bi-person-raised-hand mx-2"></i>My Teachers</a>
+                    <a href="#" class="list-group-item p-2 text-danger"><i
+                            class="bi bi-calendar2-range-fill mx-2"></i>Date Sheet</a>
+                    <a href="#" class="list-group-item p-2 text-info-emphasis"><i
+                            class="bi bi-cloud-fog2-fill mx-2"></i>QEC Evaluation</a>
+                    <a href="#" class="list-group-item p-2 text-info-emphasis"><i
+                            class="bi bi-cloud-fog2-fill mx-2"></i>DSA Evaluation</a>
+                    <a href="#" class="list-group-item p-2 text-info-emphasis"><i
+                            class="bi bi-clipboard2-data-fill mx-2"></i>Roll No Slip</a>
+                    <a href="#" class="list-group-item p-2 text-danger"><i
+                            class="bi bi-brush-fill mx-2"></i>Assignments</a>
+                    <a href="#" class="list-group-item p-2 text-info-emphasis"><i
+                            class="bi bi-book-half mx-2"></i>Quizes</a>
+                    <a href="#" class="list-group-item p-2 text-info-emphasis"><i
+                            class="bi bi-people-fill mx-2"></i>Memberships</a>
+                    <a href="#" class="list-group-item p-2 text-info-emphasis"><i
+                            class="bi bi-eye-fill mx-2"></i>Visits</a>
+                    <a href="#" class="list-group-item p-2 text-info-emphasis"><i
+                            class="bi bi-envelope-open-fill mx-2"></i>Message Board</a>
+                    <a href="List-of-graduated.html" class="list-group-item p-2 text-info-emphasis"><i
+                            class="bi bi-mortarboard-fill mx-2"></i>Alumni</a>
+                    <a href="#" class="list-group-item p-2 text-info"><i class="bi bi-gear-fill mx-2"></i>Settings</a>
+                </div>
+            </div>
+            <div class="col-12 col-md-4 col-lg-2 p-0">
+                <div class="border m-2">
+                    <p class="text-white style-color p-2 fs-6 fw-semibold">BASIC INFORMATION</p>
+                    <div class="m-2 border p-2">
+                        <img src="images/Male.jpg" alt="" class="w-100" data-aos="zoom-in">
+                    </div>
+                    <div class="border  bg-light m-2 p-3 fw-semibold text-info-emphasis">
+                        MUHAMMAD WAIZ SHABAN GULL
+                    </div>
+                </div>
+                <div class="border m-2">
+                    <p class="text-white style-color p-2 fs-6 mb-0 fw-semibold">Contact</p>
+                    <small class="d-block border-bottom text-info-emphasis py-2 px-1 fw-semibold"><i
+                            class="bi bi-envelope-fill mx-1"></i>waizshaban215@gmail.com</small>
+                    <small class="d-block border-bottom text-info-emphasis py-2 px-1 fw-semibold"><i
+                            class="bi bi-phone-fill mx-1"></i>+92 (305) 7293362</small>
+                    <small class="d-block text-info-emphasis py-2 px-1 fw-semibold"><i
+                            class="bi bi-telephone-fill mx-1"></i>041-8777210</small>
+                </div>
+                <div class="border m-2">
+                    <div class="text-white style-color p-2 fs-6 fw-semibold d-flex justify-content-between">
+                        <div><i class="bi bi-gear-fill mx-1"></i>Skills</div>
+                        <div class="btn text-white p-0" data-bs-toggle="modal" data-bs-target="#Modal4">
+                            <i class="bi bi-pencil-square"></i>
+                        </div>
+                    </div>
+                    <div class="p-2">
+                        <p class="text-secondary mb-0 fs-6 fw-semibold">Graphic designing</p>
+                        <div class="progress mb-2 rounded-0" style="height: 10px;">
+                            <div data-aos="fade-right" class="progress-bar  progress-bar-striped progress-bar-animated"
+                                style="width:100%; height: 10px;"></div>
+                        </div>
+                        <p class="text-secondary mb-0 fs-6 fw-semibold">Web development</p>
+                        <div class="progress mb-2 rounded-0" style="height: 10px;">
+                            <div data-aos="fade-right" class="progress-bar progress-bar-striped progress-bar-animated"
+                                style="width:25%; height: 10px;"></div>
+                        </div>
+                        <p class="text-secondary mb-0 fs-6 fw-semibold">SEO Expert</p>
+                        <div class="progress mb-2 rounded-0" style="height: 10px;">
+                            <div data-aos="fade-right" class="progress-bar progress-bar-striped progress-bar-animated"
+                                style="width:60%; height: 10px;"></div>
+                        </div>
+                        <p class="text-secondary mb-0 fs-6 fw-semibold">App development</p>
+                        <div class="progress mb-2 rounded-0" style="height: 10px;">
+                            <div data-aos="fade-right" class="progress-bar progress-bar-striped progress-bar-animated"
+                                style="width:100%; height: 10px;"></div>
+                        </div>
+                        <p class="text-secondary mb-0 fs-6 fw-semibold">Affiliate Marketing</p>
+                        <div class="progress mb-2 rounded-0" style="height: 10px;">
+                            <div class="progress-bar progress-bar-striped progress-bar-animated"
+                                style="width:25%; height: 10px;"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-8 p-0">
+                <div class="border m-2">
+                    <p class="text-white style-color p-2 fs-6 fw-semibold mb-0"><i
+                            class="bi bi-person-fill mx-1"></i>User Profile</p>
+                    <!-- Nav tabs -->
+                    <ul class="nav nav-underline px-0 px-md-1" id="myTab">
+                        <li class="nav-item">
+                            <button class="nav-link text-info-emphasis active" data-bs-toggle="pill"
+                                data-bs-target="#Alumni"><i class="bi bi-mortarboard-fill mx-1"></i>Alumni</button>
+                        </li>
+                        <li class="nav-item">
+                            <button class="nav-link text-info-emphasis" data-bs-toggle="pill"
+                                data-bs-target="#Education"><i class="bi bi-bank2 mx-1"></i>Education</button>
+                        </li>
+                        <li class="nav-item">
+                            <button class="nav-link text-info-emphasis " data-bs-toggle="pill"
+                                data-bs-target="#Profile"><i class="bi bi-person-fill mx-1"></i>My Profile</button>
+                        </li>
+                    </ul>
+                    <!-- Tab panes -->
+                    <div class="tab-content" id="myTabContent">
+                        <div class="tab-pane fade show active p-2" id="Alumni">
+                            <div class="border p-2 p-md-3 bg-light">
+                                <div class="primary-font fw-bold fs-4 text-primary-emphasis text-shadow mb-3">
+                                    <i class="bi bi-mortarboard-fill mx-1"></i>
+                                    Welcome to the Alumni Connect Module
+                                </div>
+                                <div class="text-muted fs-5 fw-semibold">
+                                    Dear Students,
+                                </div>
+                                <p class="text-muted mb-2">
+                                    We are excited to introduce a brand new feature in our university portal - the
+                                    Alumni Connect Module! This innovative addition is designed to foster meaningful
+                                    connections between our current students and the esteemed graduates of our
+                                    university.
+                                </p>
+                                <!-- <div class="text-muted fs-5 fw-semibold">
+                Key Features:
+            </div>
+            <p class="text-muted mb-2"><strong>Network Expansion:</strong> Explore an extensive network of alumni who have successfully ventured into various industries. Connect with professionals who share common academic roots and gain valuable insights into your chosen career paths.</p>
+            <p class="text-muted mb-2"><strong>Mentorship Opportunities:</strong> Engage with seasoned professionals who are willing to share their experiences and guide you on your academic and career journey. Benefit from their wisdom, learn from their challenges, and build relationships that extend beyond the classroom.</p>
+            <p class="text-muted mb-2"><strong>Industry Insights:</strong> Get a glimpse into the real-world application of your studies by tapping into the experiences of our graduates. Discover how they navigated the transition from academia to the professional world and gain valuable insights into industry trends.</p>
+            <p class="text-muted mb-2"><strong>Job Shadowing:</strong> Explore potential career paths by connecting with alumni for job shadowing opportunities. Witness firsthand the day-to-day activities of professionals in your field of interest.</p>
+             -->
+                                <p class="text-muted mb-2">
+                                    Alumni Connect is not just a feature; it's a gateway to a world of possibilities.
+                                    Embrace the chance to connect, learn, and grow with the support of our incredible
+                                    alumni community. Your journey doesn't end with graduation; it's just the beginning
+                                    of a lifelong connection to a network that will enrich your academic and
+                                    professional life.
+                                </p>
+                                <p class="text-muted fw-semibold">
+                                    Explore the Alumni Connect Module today and unlock a universe of opportunities!!!
+                                </p>
+                                <!-- Explore button -->
+                                <a href="List-of-graduated.html" class="styled-btn mx-0 mx-md-2" type="button">
+                                    <div class="strong">Explore</div>
+                                    <div id="container-stars">
+                                        <div id="stars"></div>
+                                    </div>
+                                    <div id="glow">
+                                        <div class="circle"></div>
+                                        <div class="circle"></div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade p-2" id="Education">
+                            <div class="border p-2">
+                                <table class="table table-hover table-bordered table-responsive">
+                                    <thead>
+                                        <tr>
+                                            <th scope="col">Degree</th>
+                                            <th scope="col">Institute</th>
+                                            <th scope="col">Total Marks</th>
+                                            <th scope="col">Obtained Marks</th>
+                                            <th scope="col">Roll No</th>
+                                            <th scope="col">Status</th>
+                                            <th scope="col">Board</th>
+                                            <th scope="col">% percentage</th>
+                                            <th scope="col">Major Subjects</th>
+                                            <th scope="col">Degree Year</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>Matric/O-Level</td>
+                                            <td>fsd</td>
+                                            <td>1100</td>
+                                            <td>943</td>
+                                            <td>19278</td>
+                                            <td>Completed</td>
+                                            <td>fsd</td>
+                                            <td>85.7272727272727</td>
+                                            <td>Computer,Physics,Chemistry,Maths</td>
+                                            <td>2018</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Intermediate/A-Level</td>
+                                            <td>punjab college</td>
+                                            <td>1100</td>
+                                            <td>697</td>
+                                            <td>19278</td>
+                                            <td>Completed</td>
+                                            <td>punjab college</td>
+                                            <td>63.3636363636364</td>
+                                            <td>physics,computer,maths</td>
+                                            <td>2020</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade p-2" id="Profile">
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <ul class="list-group">
+                                        <li class="list-group-item border-0 p-0 mb-2 text-muted"><strong>Account
+                                                ID:</strong>111744</li>
+                                        <li class="list-group-item border-0 p-0 mb-2 text-muted"><strong>Reg
+                                                Date:</strong>11/8/2020 10:42:37 AM</li>
+                                        <li class="list-group-item border-0 p-0 mb-2 text-muted">
+                                            <strong>Email:</strong>waizshaban215gmail.com
+                                        </li>
+                                        <li class="list-group-item border-0 p-0 mb-2 text-muted"><strong>Home
+                                                Phone:</strong>+92 (32) 3965940</li>
+                                        <li class="list-group-item border-0 p-0 mb-2 text-muted">
+                                            <strong>Mobile:</strong>+92 (305) 7293362
+                                        </li>
+                                        <li class="list-group-item border-0 p-0 mb-2 text-muted">
+                                            <strong>Gender:</strong>Male
+                                        </li>
+                                        <li class="list-group-item border-0 p-0 mb-2 text-muted"><strong>Zip
+                                                Postal:</strong>38000</li>
+                                        <li class="list-group-item border-0 p-0 mb-2 text-muted">
+                                            <strong>Address:</strong>486-B Street No 17 Nazimabad Faisalabad
+                                        </li>
+                                        <li class="list-group-item border-0 p-0 mb-2 text-muted"><strong>Date of
+                                                Birth:</strong>7/9/2002 11:28:32 PM</li>
+                                        <li class="list-group-item border-0 p-0 mb-2 text-muted"><strong>First
+                                                Name:</strong>MUHAMMAD WAIZ</li>
+                                        <li class="list-group-item border-0 p-0 mb-2 text-muted"><strong>Last
+                                                Name:</strong>SHABAN GULL</li>
+                                        <li class="list-group-item border-0 p-0 mb-2 text-muted">
+                                            <strong>Religion:</strong>Islam
+                                        </li>
+                                        <li class="list-group-item border-0 p-0 mb-2 text-muted"><strong>Marital
+                                                Status:</strong>Single</li>
+                                        <li class="list-group-item border-0 p-0 mb-2 text-muted">
+                                            <strong>Nationality:</strong>Pakistan
+                                        </li>
+                                        <li class="list-group-item border-0 p-0 mb-2 text-muted"><strong>Domicile
+                                                City:</strong>Faisalabad</li>
+                                        <li class="list-group-item border-0 p-0 mb-2 text-muted"><strong>Mother
+                                                Tongue:</strong>Urdu</li>
+                                        <li class="list-group-item border-0 p-0 mb-2 text-muted"><strong>Roll
+                                                No:</strong>19278</li>
+                                        <li class="list-group-item border-0 p-0 mb-2 text-muted"><strong>Registration
+                                                No:</strong>F20A14U20186</li>
+                                        <li class="list-group-item border-0 p-0 mb-2 text-muted"><strong>Enrolled
+                                                In:</strong>Fall 2020</li>
+                                        <li class="list-group-item border-0 p-0 mb-2 text-muted"><strong>Current
+                                                Semester:</strong>7</li>
+                                        <li class="list-group-item border-0 p-0 text-muted"><strong>Blood:</strong>B-
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="col-md-4">
+                                    <ul class="list-group">
+                                        <li class="list-group-item border-0 p-0 mb-2 text-muted"><strong>Emergency
+                                                Contact Name:</strong>Shaban Gull</li>
+                                        <li class="list-group-item border-0 p-0 mb-2 text-muted"><strong>Emergency
+                                                Contact No:</strong>+92 (300) 7617173</li>
+                                        <li class="list-group-item border-0 p-0 mb-2 text-muted">
+                                            <strong>District:</strong>Faisalabad
+                                        </li>
+                                        <li class="list-group-item border-0 p-0 mb-2 text-muted">
+                                            <strong>Disability:</strong>False
+                                        </li>
+                                        <li class="list-group-item border-0 p-0 mb-2 text-muted"><strong>Is
+                                                Criminal:</strong>False</li>
+                                        <li class="list-group-item border-0 p-0 mb-2 text-muted">
+                                            <strong>CNIC:</strong>33100-6151961-7
+                                        </li>
+                                        <li class="list-group-item border-0 p-0 mb-2 text-muted"><strong>Is
+                                                Hafiz:</strong>False</li>
+                                        <li class="list-group-item border-0 p-0 mb-2 text-muted"><strong>Is Admission
+                                                Confirm:</strong>True</li>
+                                        <li class="list-group-item border-0 p-0 mb-2 text-muted"><strong>Section
+                                                Name:</strong>C</li>
+                                        <li class="list-group-item border-0 p-0 mb-2 text-muted"><strong>Active From
+                                                Account:</strong>True</li>
+                                        <li class="list-group-item border-0 p-0 mb-2 text-muted"><strong>Account
+                                                Verify:</strong>False</li>
+                                        <li class="list-group-item border-0 p-0 mb-2 text-muted"><strong>Dsa
+                                                Verify:</strong>True</li>
+                                        <li class="list-group-item border-0 p-0 mb-2 text-muted"><strong>Country
+                                                Name:</strong>Pakistan</li>
+                                        <li class="list-group-item border-0 p-0 mb-2 text-muted"><strong>Dept
+                                                Name:</strong>Computing</li>
+                                        <li class="list-group-item border-0 p-0 mb-2 text-muted"><strong>City
+                                                Name:</strong>Faisalabad</li>
+                                        <li class="list-group-item border-0 p-0 mb-2 text-muted"><strong>Tehsil
+                                                Name:</strong>Faisalabad city</li>
+                                        <li class="list-group-item border-0 p-0 mb-2 text-muted"><strong>College
+                                                Name:</strong>Riphah College</li>
+                                        <li class="list-group-item border-0 p-0 mb-2 text-muted">
+                                            <strong>Province:</strong>Punjab
+                                        </li>
+                                        <li class="list-group-item border-0 p-0 mb-2 text-muted"><strong>Degree
+                                                Name:</strong>BS Computer Science</li>
+                                        <li class="list-group-item border-0 p-0 text-muted"><strong>Year Of
+                                                Passing:</strong>2020</li>
+                                    </ul>
+                                </div>
+                                <div class="col-md-4">
+                                    <ul class="list-group">
+                                        <li class="list-group-item border-0 p-0 mb-2 text-muted"><strong>Degree Program
+                                                Certificate Title:</strong>ICS</li>
+                                        <li class="list-group-item border-0 p-0 mb-2 text-muted"><strong>Institute
+                                                Name:</strong>Punjab College</li>
+                                        <li class="list-group-item border-0 p-0 mb-2 text-muted"><strong>Institute
+                                                Catagory:</strong>Private</li>
+                                        <li class="list-group-item border-0 p-0 mb-2 text-muted"><strong>Institute
+                                                Country:</strong>Pakistan</li>
+                                        <li class="list-group-item border-0 p-0 mb-2 text-muted"><strong>Exam
+                                                Institute:</strong>Government College Ghulam Muhammad Fsd</li>
+                                        <li class="list-group-item border-0 p-0 mb-2 text-muted"><strong>Exam Institute
+                                                Country:</strong>1</li>
+                                        <li class="list-group-item border-0 p-0 mb-2 text-muted"><strong>CGPA/Obtained
+                                                Marks:</strong>697</li>
+                                        <li class="list-group-item border-0 p-0 mb-2 text-muted"><strong>Total
+                                                CGPA/Total Marks:</strong>1100</li>
+                                        <li class="list-group-item border-0 p-0 mb-2 text-muted"><strong>Awarded
+                                                Grade:</strong>B</li>
+                                        <li class="list-group-item border-0 p-0 mb-2 text-muted"><strong>Total Cr
+                                                Hours:</strong>0</li>
+                                        <li class="list-group-item border-0 p-0 mb-2 text-muted"><strong>Transcript
+                                                No:</strong>Nill</li>
+                                        <li class="list-group-item border-0 p-0 mb-2 text-muted"><strong>Result
+                                                Declaration Date:</strong>9/22/2020 11:28:32 PM</li>
+                                        <li class="list-group-item border-0 p-0 mb-2 text-muted"><strong>Degree OR
+                                                Certificate No:</strong>590571-IFR-2018</li>
+                                        <li class="list-group-item border-0 p-0 mb-2 text-muted"><strong>Degree OR
+                                                Certificate Date:</strong>9/29/2020 11:28:32 PM</li>
+                                        <li class="list-group-item border-0 p-0 mb-2 text-muted"><strong>Discipline OR
+                                                Subject:</strong>Nill</li>
+                                        <li class="list-group-item border-0 p-0 mb-2 text-muted"><strong>Sub Discipline
+                                                OR Subject:</strong>Nill</li>
+                                        <li class="list-group-item border-0 p-0 mb-2 text-muted"><strong>Project
+                                                Research Title:</strong>Nill</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Footer -->
+    <footer class="bg-body-secondary text-center py-3 py-md-4 fw-semibold text-info-emphasis text-shadow"
+        id="copyright"></footer>
+    <!-- offcanvas -->
+    <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvas1" aria-labelledby="offcanvasExampleLabel"
+        style="width: 300px;">
+        <div class="offcanvas-header bg-success text-white">
+            <h5 class="offcanvas-title" id="offcanvasExampleLabel">Welcome To Riphah FSD</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body p-0">
+            <a href="Student-profile.html" class="list-group-item p-2 text-info"><i
+                    class="bi bi-person-check-fill mx-2"></i>My Profile</a>
+            <a href="#" class="list-group-item p-2 text-danger"><i class="bi bi-rocket-takeoff-fill mx-2"></i>My
+                Results</a>
+            <a href="#" class="list-group-item p-2 text-info-emphasis"><i class="bi bi-flower2 mx-2"></i>New
+                Enrollment</a>
+            <a href="#" class="list-group-item p-2 text-info-emphasis"><i class="bi bi-flower1 mx-2"></i>All
+                Enrollments</a>
+            <a href="#" class="list-group-item p-2 text-info"><i class="bi bi-clock-fill mx-2"></i>My Timetable</a>
+            <a href="Attendance.html" class="list-group-item p-2 text-info"><i
+                    class="bi bi-tencent-qq mx-2"></i>Attendance</a>
+            <a href="#" class="list-group-item p-2 text-info-emphasis"><i class="bi bi-person-raised-hand mx-2"></i>My
+                Teachers</a>
+            <a href="#" class="list-group-item p-2 text-danger"><i class="bi bi-calendar2-range-fill mx-2"></i>Date
+                Sheet</a>
+            <a href="#" class="list-group-item p-2 text-info-emphasis"><i class="bi bi-cloud-fog2-fill mx-2"></i>QEC
+                Evaluation</a>
+            <a href="#" class="list-group-item p-2 text-info-emphasis"><i class="bi bi-cloud-fog2-fill mx-2"></i>DSA
+                Evaluation</a>
+            <a href="#" class="list-group-item p-2 text-info-emphasis"><i
+                    class="bi bi-clipboard2-data-fill mx-2"></i>Roll No Slip</a>
+            <a href="#" class="list-group-item p-2 text-danger"><i class="bi bi-brush-fill mx-2"></i>Assignments</a>
+            <a href="#" class="list-group-item p-2 text-info-emphasis"><i class="bi bi-book-half mx-2"></i>Quizes</a>
+            <a href="#" class="list-group-item p-2 text-info-emphasis"><i
+                    class="bi bi-people-fill mx-2"></i>Memberships</a>
+            <a href="#" class="list-group-item p-2 text-info-emphasis"><i class="bi bi-eye-fill mx-2"></i>Visits</a>
+            <a href="#" class="list-group-item p-2 text-info-emphasis"><i
+                    class="bi bi-envelope-open-fill mx-2"></i>Message Board</a>
+            <a href="List-of-graduated.html" class="list-group-item p-2 text-info-emphasis"><i
+                    class="bi bi-mortarboard-fill mx-2"></i>Alumni</a>
+            <a href="#" class="list-group-item p-2 text-info"><i class="bi bi-gear-fill mx-2"></i>Settings</a>
+        </div>
+    </div>
+    <!-- Modal -->
+    <div class="modal fade" id="Modal4" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header align-items-center">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel"><i class="bi bi-bookmark-heart mx-1"></i>Select
+                        the level of your skills</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <!-- <div class="fw-semibold text-center mb-3">Select the level of your skill</div> -->
+                    <div class="mb-1">
+                        <div class="text-secondary fs-6 fw-semibold">Graphic designing</div>
+                        <div class="d-flex  align-items-center">
+                            <div class="form-check mx-2">
+                                <input class="form-check-input" type="radio" name="flexRadioDefault1"
+                                    id="flexRadioDefault1">
+                                <label class="form-check-label" for="flexRadioDefault1">
+                                    Beginner
+                                </label>
+                            </div>
+                            <div class="form-check mx-2">
+                                <input class="form-check-input" type="radio" name="flexRadioDefault1"
+                                    id="flexRadioDefault2">
+                                <label class="form-check-label" for="flexRadioDefault2">
+                                    Intermediate
+                                </label>
+                            </div>
+                            <div class="form-check mx-2">
+                                <input class="form-check-input" type="radio" checked name="flexRadioDefault1"
+                                    id="flexRadioDefault3">
+                                <label class="form-check-label" for="flexRadioDefault3">
+                                    Advanced
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mb-1">
+                        <div class="text-secondary fs-6 fw-semibold">Web development</div>
+                        <div class="d-flex align-items-center">
+                            <div class="form-check mx-2">
+                                <input class="form-check-input" checked type="radio" name="flexRadioDefault2"
+                                    id="flexRadioDefault4">
+                                <label class="form-check-label" for="flexRadioDefault4">
+                                    Beginner
+                                </label>
+                            </div>
+                            <div class="form-check mx-2">
+                                <input class="form-check-input" type="radio" name="flexRadioDefault2"
+                                    id="flexRadioDefault5">
+                                <label class="form-check-label" for="flexRadioDefault5">
+                                    Intermediate
+                                </label>
+                            </div>
+                            <div class="form-check mx-2">
+                                <input class="form-check-input" type="radio" name="flexRadioDefault2"
+                                    id="flexRadioDefault6">
+                                <label class="form-check-label" for="flexRadioDefault6">
+                                    Advanced
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mb-1">
+                        <div class="text-secondary fs-6 fw-semibold">SEO Expert</div>
+                        <div class="d-flex align-items-center">
+                            <div class="form-check mx-2">
+                                <input class="form-check-input" type="radio" name="flexRadioDefault3"
+                                    id="flexRadioDefault7">
+                                <label class="form-check-label" for="flexRadioDefault7">
+                                    Beginner
+                                </label>
+                            </div>
+                            <div class="form-check mx-2">
+                                <input class="form-check-input" checked type="radio" name="flexRadioDefault3"
+                                    id="flexRadioDefault8">
+                                <label class="form-check-label" for="flexRadioDefault8">
+                                    Intermediate
+                                </label>
+                            </div>
+                            <div class="form-check mx-2">
+                                <input class="form-check-input" type="radio" name="flexRadioDefault3"
+                                    id="flexRadioDefault9">
+                                <label class="form-check-label" for="flexRadioDefault9">
+                                    Advanced
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mb-1">
+                        <div class="text-secondary fs-6 fw-semibold">App development</div>
+                        <div class="d-flex align-items-center">
+                            <div class="form-check mx-2">
+                                <input class="form-check-input" type="radio" name="flexRadioDefault4"
+                                    id="flexRadioDefault10">
+                                <label class="form-check-label" for="flexRadioDefault10">
+                                    Beginner
+                                </label>
+                            </div>
+                            <div class="form-check mx-2">
+                                <input class="form-check-input" type="radio" name="flexRadioDefault4"
+                                    id="flexRadioDefault11">
+                                <label class="form-check-label" for="flexRadioDefault11">
+                                    Intermediate
+                                </label>
+                            </div>
+                            <div class="form-check mx-2">
+                                <input class="form-check-input" checked type="radio" name="flexRadioDefault4"
+                                    id="flexRadioDefault12">
+                                <label class="form-check-label" for="flexRadioDefault12">
+                                    Advanced
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="text-secondary fs-6 fw-semibold">Affiliate Marketing</div>
+                        <div class="d-flex align-items-center">
+                            <div class="form-check mx-2">
+                                <input class="form-check-input" checked type="radio" name="flexRadioDefault5"
+                                    id="flexRadioDefault13">
+                                <label class="form-check-label" for="flexRadioDefault13">
+                                    Beginner
+                                </label>
+                            </div>
+                            <div class="form-check mx-2">
+                                <input class="form-check-input" type="radio" name="flexRadioDefault5"
+                                    id="flexRadioDefault14">
+                                <label class="form-check-label" for="flexRadioDefault14">
+                                    Intermediate
+                                </label>
+                            </div>
+                            <div class="form-check mx-2">
+                                <input class="form-check-input" type="radio" name="flexRadioDefault5"
+                                    id="flexRadioDefault15">
+                                <label class="form-check-label" for="flexRadioDefault15">
+                                    Advanced
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-outline-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-outline-info" data-bs-dismiss="modal">Update</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 1000,
+            once: true,
+        });
+    </script>
+</body>
+
+</html>
